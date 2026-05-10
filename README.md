@@ -4,7 +4,7 @@
 Built a virtualized network security lab using VirtualBox to simulate a real-world DoS attack and demonstrate firewall-based mitigation using pfSense. The lab replicates a two-zone network architecture with an external attacker (Kali Linux) on the WAN side and a victim host (Ubuntu) on an isolated internal LAN segment protected by pfSense.
 
 ## Tools & Technologies
-- pfSense CE 2.7.x
+- pfSense CE 2.7.2
 - Kali Linux (Attacker)
 - Ubuntu Desktop (Victim)
 - Oracle VirtualBox
