@@ -18,15 +18,16 @@ Built a virtualized network security lab using VirtualBox to simulate a real-wor
 ## Network Topology
 | Device | Network Adapter | IP Address | Role |
 |---|---|---|---|
-| pfSense WAN | Bridged | 192.168.4.155 | Edge Firewall |
-| pfSense LAN | Internal (LabNet) | 192.168.1.1 | Default Gateway |
-| Kali Linux | Bridged | 192.168.4.157 | Attacker |
-| Ubuntu Desktop | Internal (LabNet) | 192.168.1.100 | Victim |
+| pfSense WAN | External | 192.168.4.155 | Edge Firewall |
+| pfSense LAN | Internal | 192.168.1.1 | Default Gateway |
+| Kali Linux | External | 192.168.4.157 | Attacker |
+| Ubuntu Desktop | Internal | 192.168.1.100 | Victim |
 
 ## What I Did
 
 ### 1. Built the Lab Environment
 Configured three VMs in VirtualBox with separate network segments — a bridged WAN segment connected to the home network and an isolated internal LAN (LabNet) behind pfSense.
+
 
 ### 2. Configured pfSense
 Set up pfSense as the edge firewall, configured DHCP on the LAN interface to serve the internal subnet, and created firewall rules to control traffic between WAN and LAN zones.
@@ -70,8 +71,11 @@ Checked firewall logs under Status → System Logs → Firewall and confirmed hu
 
 
 ## Key Takeaways
-- Configured a pfSense firewall with multi-zone network segmentation (WAN/LAN)
-- Demonstrated how firewall rules control traffic flow between network segments
-- Simulated a real DoS attack and mitigated it using firewall-based packet filtering
-- Used Wireshark to capture and analyze attack traffic in real time
-- Understood how NAT enables private LAN hosts to reach the internet through a firewall
+- Built a two-zone network (WAN/LAN) in VirtualBox simulating a real enterprise firewall topology
+- Configured pfSense with DHCP, DNS, interface assignments, and firewall rules between network zones
+- Simulated a TCP SYN flood attack using hping3 routed through pfSense into an isolated internal LAN
+- Captured and analyzed live attack traffic in Wireshark at the packet level in real time
+- Mitigated the DoS attack with a pfSense block rule — verified via Wireshark and firewall logs
+- Learned how pfSense acts as a traffic chokepoint, intercepting packets before they reach their destination
+- Configured static routes on Kali to enable cross-subnet reachability between WAN and LAN
+- Understood how firewall rule ordering (top-down) directly impacts traffic flow and security
