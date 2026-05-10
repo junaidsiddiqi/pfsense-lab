@@ -21,7 +21,7 @@ Built a virtualized network security lab using VirtualBox to simulate a real-wor
 
 ## Network Diagram
 
-> <img width="691" height="482" alt="image" src="https://github.com/user-attachments/assets/bcfb27bb-cf24-4cd2-b6ba-e680fefa9fdc" />
+> <img width="691" height="482" alt="Firewall Defense Lab drawio" src="https://github.com/user-attachments/assets/2ebd449e-0e09-4340-aeb1-76b3827596de" />
 
 
 ## What I Did
