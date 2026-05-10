@@ -38,21 +38,16 @@ Used hping3 on Kali Linux to launch a TCP SYN flood against the Ubuntu victim ma
 sudo hping3 -S -p 80 --flood 192.168.1.100
 ```
 
-
 ### 4. Captured Attack Traffic
 Monitored the flood in real time using Wireshark on Ubuntu, confirming packets were arriving from the attacker.
 
-![Wireshark SYN Flood](screenshots/wireshark_flood.png)
 
 ### 5. Mitigated the Attack
 Created a block rule in pfSense targeting Kali's IP with logging enabled. Applied the rule and confirmed in Wireshark that the flood immediately stopped reaching Ubuntu.
 
-![pfSense Block Rule](screenshots/block_rule.png)
-
 ### 6. Verified in pfSense Logs
 Checked firewall logs under Status → System Logs → Firewall and confirmed hundreds of blocked SYN packets logged against the Block Kali DoS rule.
 
-![pfSense Firewall Logs](screenshots/firewall_logs.png)
 
 ## Screenshots
 
@@ -60,10 +55,12 @@ Checked firewall logs under Status → System Logs → Firewall and confirmed hu
 |---|---|
 | <img width="1915" height="934" alt="image" src="https://github.com/user-attachments/assets/112847fa-0f06-4817-a47a-f0e9b9fe0fc5" /> | VM's Used
 | <img width="720" height="400" alt="image" src="https://github.com/user-attachments/assets/a7c92bac-f905-47ef-a159-8341c73b4b86" /> | pfSense console showing WAN and LAN interfaces
+| <img width="1808" height="1904" alt="image" src="https://github.com/user-attachments/assets/722d0c7c-448a-4309-a9a9-3c28ae5b51b1" /> | DHCP & DNS Server configured on the LAN interface
 | <img width="1757" height="838" alt="image" src="https://github.com/user-attachments/assets/0c9a265b-5f60-49fb-97fe-414b3761fcc6" /> | pfSense Firewall Rules
 | <img width="1278" height="795" alt="image" src="https://github.com/user-attachments/assets/d9839089-fd7a-43e7-a1dc-e0f87a40c4b4" /> | Wireshark capturing SYN flood | 
 | <img width="1276" height="796" alt="image" src="https://github.com/user-attachments/assets/5566dd4f-6150-4e4b-ab35-b667553603eb" /> | Wireshark after block rule applied |
 | <img width="1771" height="1957" alt="image" src="https://github.com/user-attachments/assets/6fec3e75-29de-409a-bba4-dbeec7e8958a" />| pfSense logs showing blocked traffic |
+
 
 ## Key Takeaways
 - Configured a pfSense firewall with multi-zone network segmentation (WAN/LAN)
