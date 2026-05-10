@@ -1,4 +1,4 @@
-# pfSense DoS Defense Lab
+# pfSense Firewall & DoS Defense Lab
 
 ## Overview
 Built a virtualized network security lab using VirtualBox to simulate a real-world DoS attack and demonstrate firewall-based mitigation using pfSense. This lab demonstrates a two-zone network architecture with an external attacker (Kali Linux) on the WAN side and a victim host (Ubuntu) on an isolated internal LAN segment protected by pfSense.
