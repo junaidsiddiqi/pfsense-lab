@@ -48,7 +48,8 @@ Monitored the flood in real time using Wireshark on Ubuntu, confirming packets w
 ### 5. Mitigated the Attack
 Created a block rule in pfSense targeting Kali's IP with logging enabled. Applied the rule and confirmed in Wireshark that the flood immediately stopped reaching Ubuntu.
 
-> <img width="1750" height="1911" alt="image" src="https://github.com/user-attachments/assets/75c58005-6fa0-4807-adf9-cdb953cb392c" />
+> <img width="1705" height="140" alt="image" src="https://github.com/user-attachments/assets/fe716613-6bac-4e70-8cd9-dedeb4996435" />
+> <img width="1276" height="796" alt="image" src="https://github.com/user-attachments/assets/5566dd4f-6150-4e4b-ab35-b667553603eb" />
 
 ### 6. Verified in pfSense Logs
 Checked firewall logs under Status → System Logs → Firewall and confirmed hundreds of blocked SYN packets logged against the Block Kali DoS rule.
