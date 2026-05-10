@@ -18,7 +18,7 @@ Built a virtualized network security lab using VirtualBox to simulate a real-wor
 ## Network Topology
 | Device | Network Adapter | IP Address | Role |
 |---|---|---|---|
-| pfSense WAN | External | 192.168.4.155 | Edge Firewall |
+| pfSense WAN | External | 192.168.4.155 | Firewall |
 | pfSense LAN | Internal | 192.168.1.1 | Default Gateway |
 | Kali Linux | External | 192.168.4.157 | Attacker |
 | Ubuntu Desktop | Internal | 192.168.1.100 | Victim |
