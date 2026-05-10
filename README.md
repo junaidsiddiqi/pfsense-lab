@@ -53,7 +53,7 @@ Checked firewall logs under Status → System Logs → Firewall and confirmed hu
 
 | Screenshot | Description |
 |---|---|
-| <img width="1915" height="934" alt="image" src="https://github.com/user-attachments/assets/112847fa-0f06-4817-a47a-f0e9b9fe0fc5" /> | VM's Used
+| <img width="1915" height="934" alt="image" src="https://github.com/user-attachments/assets/112847fa-0f06-4817-a47a-f0e9b9fe0fc5" /> | Virtual Machines Used
 | <img width="720" height="400" alt="image" src="https://github.com/user-attachments/assets/a7c92bac-f905-47ef-a159-8341c73b4b86" /> | pfSense console showing WAN and LAN interfaces
 | <img width="1808" height="1904" alt="image" src="https://github.com/user-attachments/assets/722d0c7c-448a-4309-a9a9-3c28ae5b51b1" /> | DHCP & DNS Server configured on the LAN interface
 | <img width="1757" height="838" alt="image" src="https://github.com/user-attachments/assets/0c9a265b-5f60-49fb-97fe-414b3761fcc6" /> | pfSense Firewall Rules
