@@ -37,6 +37,7 @@ Used hping3 on Kali Linux to launch a TCP SYN flood against the Ubuntu victim ma
 ```bash
 sudo hping3 -S -p 80 --flood 192.168.1.100
 ```
+<img width="1771" height="1957" alt="image" src="https://github.com/user-attachments/assets/6886604b-725f-4af0-8e80-5620ad558d4b"
 
 ### 4. Captured Attack Traffic
 Monitored the flood in real time using Wireshark on Ubuntu, confirming packets were arriving from the attacker.
