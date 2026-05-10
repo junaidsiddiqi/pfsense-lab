@@ -1,7 +1,7 @@
 # pfSense DoS Defense Lab
 
 ## Overview
-Built a virtualized network security lab using VirtualBox to simulate a real-world DoS attack and demonstrate firewall-based mitigation using pfSense. The lab replicates a two-zone network architecture with an external attacker (Kali Linux) on the WAN side and a victim host (Ubuntu) on an isolated internal LAN segment protected by pfSense.
+Built a virtualized network security lab using VirtualBox to simulate a real-world DoS attack and demonstrate firewall-based mitigation using pfSense. This lab demonstrates a two-zone network architecture with an external attacker (Kali Linux) on the WAN side and a victim host (Ubuntu) on an isolated internal LAN segment protected by pfSense.
 
 ## Network Diagram
 
@@ -57,9 +57,9 @@ Checked firewall logs under Status → System Logs → Firewall and confirmed hu
 
 | Screenshot | Description |
 |---|---|
-| ![VMs](screenshots/virtualbox_vms.png) | VirtualBox showing all 3 VMs |
-| ![Console](screenshots/pfsense_console.png) | pfSense console with WAN/LAN IPs |
-| ![Rules](screenshots/firewall_rules.png) | pfSense WAN firewall rules |
+| <img width="1915" height="934" alt="image" src="https://github.com/user-attachments/assets/112847fa-0f06-4817-a47a-f0e9b9fe0fc5" /> |
+| <img width="720" height="400" alt="image" src="https://github.com/user-attachments/assets/a7c92bac-f905-47ef-a159-8341c73b4b86" /> |
+| <img width="1757" height="838" alt="image" src="https://github.com/user-attachments/assets/0c9a265b-5f60-49fb-97fe-414b3761fcc6" /> |
 | ![Flood](screenshots/wireshark_flood.png) | Wireshark capturing SYN flood |
 | ![Blocked](screenshots/wireshark_blocked.png) | Wireshark after block rule applied |
 | ![Logs](screenshots/firewall_logs.png) | pfSense logs showing blocked traffic |
