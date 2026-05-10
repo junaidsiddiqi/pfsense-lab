@@ -22,24 +22,8 @@ Built a virtualized network security lab using VirtualBox to simulate a real-wor
 ## Network Diagram
 
 ```
-                        [ Home Router ]
-                          192.168.4.1
-                         /           \
-                        /             \
-              [ Kali Linux ]     [ pfSense WAN ]
-              192.168.4.157       192.168.4.155
-              (Attacker)          (Bridged NIC)
-                    \                  |
-                  SYN flood       Firewall rules
-                    \              Block / NAT
-                     \                 |
-                      \        [ pfSense LAN ]
-                       \          192.168.1.1
-                        \              |
-                         \      [ Ubuntu Desktop ]
-                          \      192.168.1.100
-                           \       (Victim)
-                            \___blocked___/
+> <img width="691" height="482" alt="image" src="https://github.com/user-attachments/assets/ff01ca30-60bb-4e28-937c-f874d03a009e" />
+
 ```
 
 ## What I Did
