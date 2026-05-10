@@ -16,7 +16,7 @@ Built a virtualized network security lab using VirtualBox to simulate a real-wor
 - hping3
 
 ## Network Topology
-| Device | Network Adapter | IP Address | Role |
+| Device | Network | IP Address | Role |
 |---|---|---|---|
 | pfSense WAN | External | 192.168.4.155 | Firewall |
 | pfSense LAN | Internal | 192.168.1.1 | Default Gateway |
