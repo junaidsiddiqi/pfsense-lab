@@ -26,11 +26,16 @@ Built a virtualized network security lab using VirtualBox to simulate a real-wor
 ## What I Did
 
 ### 1. Built the Lab Environment
-Configured three VMs in VirtualBox with separate network segments — a bridged WAN segment connected to the home network and an isolated internal LAN (LabNet) behind pfSense.
+Configured three VMs in VirtualBox with separate network segments — a bridged WAN segment connected to the home network and an isolated internal LAN behind pfSense.
+
+> <img width="1915" height="934" alt="image" src="https://github.com/user-attachments/assets/112847fa-0f06-4817-a47a-f0e9b9fe0fc5" />
 
 
 ### 2. Configured pfSense
-Set up pfSense as the edge firewall, configured DHCP on the LAN interface to serve the internal subnet, and created firewall rules to control traffic between WAN and LAN zones.
+Set up pfSense as the firewall, configured DHCP & DNS on the LAN interface to serve the internal subnet, and created firewall rules to control traffic between WAN and LAN zones.
+
+> <img width="720" height="400" alt="image" src="https://github.com/user-attachments/assets/a7c92bac-f905-47ef-a159-8341c73b4b86" />
+> <img width="1808" height="1904" alt="image" src="https://github.com/user-attachments/assets/722d0c7c-448a-4309-a9a9-3c28ae5b51b1" />
 
 ### 3. Simulated a DoS Attack
 Used hping3 on Kali Linux to launch a TCP SYN flood against the Ubuntu victim machine, routing traffic through pfSense's WAN interface into the internal LAN segment.
