@@ -57,12 +57,12 @@ Checked firewall logs under Status → System Logs → Firewall and confirmed hu
 
 | Screenshot | Description |
 |---|---|
-| <img width="1915" height="934" alt="image" src="https://github.com/user-attachments/assets/112847fa-0f06-4817-a47a-f0e9b9fe0fc5" /> |
-| <img width="720" height="400" alt="image" src="https://github.com/user-attachments/assets/a7c92bac-f905-47ef-a159-8341c73b4b86" /> |
-| <img width="1757" height="838" alt="image" src="https://github.com/user-attachments/assets/0c9a265b-5f60-49fb-97fe-414b3761fcc6" /> |
-| ![Flood](screenshots/wireshark_flood.png) | Wireshark capturing SYN flood |
-| ![Blocked](screenshots/wireshark_blocked.png) | Wireshark after block rule applied |
-| ![Logs](screenshots/firewall_logs.png) | pfSense logs showing blocked traffic |
+| <img width="1915" height="934" alt="image" src="https://github.com/user-attachments/assets/112847fa-0f06-4817-a47a-f0e9b9fe0fc5" /> | VM's Used
+| <img width="720" height="400" alt="image" src="https://github.com/user-attachments/assets/a7c92bac-f905-47ef-a159-8341c73b4b86" /> | pfSense console showing WAN and LAN interfaces
+| <img width="1757" height="838" alt="image" src="https://github.com/user-attachments/assets/0c9a265b-5f60-49fb-97fe-414b3761fcc6" /> | pfSense Firewall Rules
+| <img width="1278" height="795" alt="image" src="https://github.com/user-attachments/assets/c963bb5e-5a78-4bc2-9604-179505623cb7" /> | Wireshark capturing SYN flood | 
+| <img width="1276" height="796" alt="image" src="https://github.com/user-attachments/assets/4f976d3e-0fa4-44e5-a153-e798507b0ea8" /> | Wireshark after block rule applied |
+| <img width="1771" height="1957" alt="image" src="https://github.com/user-attachments/assets/6886604b-725f-4af0-8e80-5620ad558d4b" /> | pfSense logs showing blocked traffic |
 
 ## Key Takeaways
 - Configured a pfSense firewall with multi-zone network segmentation (WAN/LAN)
